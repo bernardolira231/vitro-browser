@@ -5,3 +5,4 @@ buildServer.json
 .build/
 
 .atl/
+.compile
