@@ -1,0 +1,539 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 110;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		9FF0A25F30B003DF00710C56 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9FF0A24930B003DE00710C56 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9FF0A25030B003DE00710C56;
+			remoteInfo = Vitro;
+		};
+		9FF0A26930B003DF00710C56 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9FF0A24930B003DE00710C56 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9FF0A25030B003DE00710C56;
+			remoteInfo = Vitro;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9FF0A25130B003DE00710C56 /* Vitro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vitro.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FF0A25E30B003DF00710C56 /* VitroTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VitroTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FF0A26830B003DF00710C56 /* VitroUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VitroUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		9FF0A25330B003DE00710C56 /* Vitro */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Vitro;
+			sourceTree = "<group>";
+		};
+		9FF0A26130B003DF00710C56 /* VitroTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = VitroTests;
+			sourceTree = "<group>";
+		};
+		9FF0A26B30B003DF00710C56 /* VitroUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = VitroUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9FF0A24E30B003DE00710C56 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+			);
+		};
+		9FF0A25B30B003DF00710C56 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+			);
+		};
+		9FF0A26530B003DF00710C56 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+			);
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9FF0A24830B003DE00710C56 = {
+			isa = PBXGroup;
+			children = (
+				9FF0A25330B003DE00710C56 /* Vitro */,
+				9FF0A26130B003DF00710C56 /* VitroTests */,
+				9FF0A26B30B003DF00710C56 /* VitroUITests */,
+				9FF0A25230B003DE00710C56 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9FF0A25230B003DE00710C56 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9FF0A25130B003DE00710C56 /* Vitro.app */,
+				9FF0A25E30B003DF00710C56 /* VitroTests.xctest */,
+				9FF0A26830B003DF00710C56 /* VitroUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9FF0A25030B003DE00710C56 /* Vitro */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9FF0A27030B003DF00710C56 /* Build configuration list for PBXNativeTarget "Vitro" */;
+			buildPhases = (
+				9FF0A24D30B003DE00710C56 /* Sources */,
+				9FF0A24E30B003DE00710C56 /* Frameworks */,
+				9FF0A24F30B003DE00710C56 /* Resources */,
+			);
+			buildRules = (
+			);
+			fileSystemSynchronizedGroups = (
+				9FF0A25330B003DE00710C56 /* Vitro */,
+			);
+			name = Vitro;
+			productName = Vitro;
+			productReference = 9FF0A25130B003DE00710C56 /* Vitro.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9FF0A25D30B003DF00710C56 /* VitroTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9FF0A27330B003DF00710C56 /* Build configuration list for PBXNativeTarget "VitroTests" */;
+			buildPhases = (
+				9FF0A25A30B003DF00710C56 /* Sources */,
+				9FF0A25B30B003DF00710C56 /* Frameworks */,
+				9FF0A25C30B003DF00710C56 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9FF0A26030B003DF00710C56 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				9FF0A26130B003DF00710C56 /* VitroTests */,
+			);
+			name = VitroTests;
+			productName = VitroTests;
+			productReference = 9FF0A25E30B003DF00710C56 /* VitroTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9FF0A26730B003DF00710C56 /* VitroUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9FF0A27630B003DF00710C56 /* Build configuration list for PBXNativeTarget "VitroUITests" */;
+			buildPhases = (
+				9FF0A26430B003DF00710C56 /* Sources */,
+				9FF0A26530B003DF00710C56 /* Frameworks */,
+				9FF0A26630B003DF00710C56 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9FF0A26A30B003DF00710C56 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				9FF0A26B30B003DF00710C56 /* VitroUITests */,
+			);
+			name = VitroUITests;
+			productName = VitroUITests;
+			productReference = 9FF0A26830B003DF00710C56 /* VitroUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9FF0A24930B003DE00710C56 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2700;
+				LastUpgradeCheck = 2700;
+				TargetAttributes = {
+					9FF0A25030B003DE00710C56 = {
+						CreatedOnToolsVersion = 27.0;
+					};
+					9FF0A25D30B003DF00710C56 = {
+						CreatedOnToolsVersion = 27.0;
+						TestTargetID = 9FF0A25030B003DE00710C56;
+					};
+					9FF0A26730B003DF00710C56 = {
+						CreatedOnToolsVersion = 27.0;
+						TestTargetID = 9FF0A25030B003DE00710C56;
+					};
+				};
+			};
+			buildConfigurationList = 9FF0A24C30B003DE00710C56 /* Build configuration list for PBXProject "Vitro" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9FF0A24830B003DE00710C56;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 9FF0A25230B003DE00710C56 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9FF0A25030B003DE00710C56 /* Vitro */,
+				9FF0A25D30B003DF00710C56 /* VitroTests */,
+				9FF0A26730B003DF00710C56 /* VitroUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9FF0A24F30B003DE00710C56 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+			);
+		};
+		9FF0A25C30B003DF00710C56 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+			);
+		};
+		9FF0A26630B003DF00710C56 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+			);
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9FF0A24D30B003DE00710C56 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+			);
+		};
+		9FF0A25A30B003DF00710C56 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+			);
+		};
+		9FF0A26430B003DF00710C56 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+			);
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9FF0A26030B003DF00710C56 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9FF0A25030B003DE00710C56 /* Vitro */;
+			targetProxy = 9FF0A25F30B003DF00710C56 /* PBXContainerItemProxy */;
+		};
+		9FF0A26A30B003DF00710C56 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9FF0A25030B003DE00710C56 /* Vitro */;
+			targetProxy = 9FF0A26930B003DF00710C56 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		9FF0A26E30B003DF00710C56 /* Debug configuration for PBXProject "Vitro" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 27.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9FF0A26F30B003DF00710C56 /* Release configuration for PBXProject "Vitro" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 27.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		9FF0A27130B003DF00710C56 /* Debug configuration for PBXNativeTarget "Vitro" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bernardolira.Vitro;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		9FF0A27230B003DF00710C56 /* Release configuration for PBXNativeTarget "Vitro" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bernardolira.Vitro;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		9FF0A27430B003DF00710C56 /* Debug configuration for PBXNativeTarget "VitroTests" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 27.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bernardolira.VitroTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Vitro.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Vitro";
+			};
+			name = Debug;
+		};
+		9FF0A27530B003DF00710C56 /* Release configuration for PBXNativeTarget "VitroTests" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 27.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bernardolira.VitroTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Vitro.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Vitro";
+			};
+			name = Release;
+		};
+		9FF0A27730B003DF00710C56 /* Debug configuration for PBXNativeTarget "VitroUITests" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bernardolira.VitroUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = Vitro;
+			};
+			name = Debug;
+		};
+		9FF0A27830B003DF00710C56 /* Release configuration for PBXNativeTarget "VitroUITests" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bernardolira.VitroUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = Vitro;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9FF0A24C30B003DE00710C56 /* Build configuration list for PBXProject "Vitro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9FF0A26E30B003DF00710C56 /* Debug configuration for PBXProject "Vitro" */,
+				9FF0A26F30B003DF00710C56 /* Release configuration for PBXProject "Vitro" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		9FF0A27030B003DF00710C56 /* Build configuration list for PBXNativeTarget "Vitro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9FF0A27130B003DF00710C56 /* Debug configuration for PBXNativeTarget "Vitro" */,
+				9FF0A27230B003DF00710C56 /* Release configuration for PBXNativeTarget "Vitro" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		9FF0A27330B003DF00710C56 /* Build configuration list for PBXNativeTarget "VitroTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9FF0A27430B003DF00710C56 /* Debug configuration for PBXNativeTarget "VitroTests" */,
+				9FF0A27530B003DF00710C56 /* Release configuration for PBXNativeTarget "VitroTests" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		9FF0A27630B003DF00710C56 /* Build configuration list for PBXNativeTarget "VitroUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9FF0A27730B003DF00710C56 /* Debug configuration for PBXNativeTarget "VitroUITests" */,
+				9FF0A27830B003DF00710C56 /* Release configuration for PBXNativeTarget "VitroUITests" */,
+			);
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9FF0A24930B003DE00710C56 /* Project object */;
+	validationLevel = 1;
+}
