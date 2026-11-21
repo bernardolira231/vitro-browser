@@ -15,8 +15,9 @@ struct ContentView: View {
         VStack(spacing: 0) {
             TextField("Search or enter URL", text: $urlText)
             .onSubmit {
-                if let url = URL(string: urlText){
+                if let url = URLResolver.resolve(urlText){
                     currentURL = url
+                    urlText = url.absoluteString
                 }
             }
             WebView(url: currentURL)
