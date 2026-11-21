@@ -46,6 +46,25 @@ Or from the command line:
 xcodebuild -scheme Vitro -configuration Debug build
 ```
 
+## Development
+
+Run the tests:
+
+```sh
+xcodebuild test -scheme Vitro -only-testing:VitroTests
+```
+
+### Editors other than Xcode
+
+Any editor that uses [sourcekit-lsp](https://github.com/swiftlang/sourcekit-lsp) (Neovim, VS Code, Zed, Helix…) needs build settings from the Xcode project. Generate them with:
+
+```sh
+brew install xcode-build-server
+./scripts/setup-lsp.sh
+```
+
+Run the script again after adding or removing Swift files, then restart the language server.
+
 ## License
 
 [MIT](LICENSE)
