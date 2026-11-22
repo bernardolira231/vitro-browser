@@ -14,13 +14,14 @@ struct ContentView: View {
     var body: some View {
         VStack(spacing: 0) {
             TextField("Search or enter URL", text: $urlText)
-            .onSubmit {
-                if let url = URLResolver.resolve(urlText){
-                    currentURL = url
-                    urlText = url.absoluteString
+                .onSubmit {
+                    if let url = URLResolver.resolve(urlText) {
+                        currentURL = url
+                    }
                 }
-            }
-            WebView(url: currentURL)
+            WebView(url: $currentURL)
+        }.onChange(of: currentURL) {
+            urlText = currentURL.absoluteString
         }
     }
 }
