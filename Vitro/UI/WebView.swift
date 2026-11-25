@@ -10,15 +10,23 @@ struct WebView: NSViewRepresentable {
 
     func makeNSView(context: Context) -> WKWebView {
         let webView = WKWebView()
-        webView.navigationDelegate = context.coordinator
-        context.coordinator.urlObservation = webView.observe(\.url) { webView, _ in
-            if let newURL = webView.url { url = newURL }
+        let coordinator = context.coordinator
+        webView.navigationDelegate = coordinator
+        coordinator.urlObservation = webView.observe(\.url) { webView, _ in
+            if let newURL = webView.url { coordinator.parent.url = newURL }
         }
         return webView
     }
 
     func updateNSView(_ nsView: WKWebView, context: Context) {
-        context.coordinator.parent = self
+        let coordinator = context.coordinator
+        coordinator.parent = self
+        // React only when SwiftUI hands us a different URL than last time.
+        // Comparing against the web view's own URL instead causes reloads, because
+        // it normalizes and redirects ("youtube.com" -> "https://www.youtube.com/").
+        guard url != coordinator.lastRequestedURL else { return }
+        coordinator.lastRequestedURL = url
+        // The web view's own navigation flows back here too; don't reload it.
         if nsView.url != url {
             nsView.load(URLRequest(url: url))
         }
@@ -26,6 +34,7 @@ struct WebView: NSViewRepresentable {
 
     final class Coordinator: NSObject, WKNavigationDelegate {
         var parent: WebView
+        var lastRequestedURL: URL?
         var urlObservation: NSKeyValueObservation?
 
         init(parent: WebView) {
