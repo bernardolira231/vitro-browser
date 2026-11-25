@@ -11,9 +11,21 @@ struct TabList {
     }
 
     mutating func closeTab(id: UUID) {
+        guard let tabIndex = tabs.firstIndex(where: { $0.id == id }) else { return }
         tabs.removeAll(where: { tab in tab.id == id })
         if activeTabID == id {
-            activeTabID = tabs.first?.id
+            if tabs.isEmpty {
+                activeTabID = nil
+            } else if tabIndex < tabs.count {
+                activeTabID = tabs[tabIndex].id
+            } else {
+                activeTabID = tabs[tabIndex - 1].id
+            }
         }
+    }
+
+    mutating func activateTab(id: UUID) {
+        guard tabs.contains(where: { $0.id == id }) else { return }
+        activeTabID = id
     }
 }
