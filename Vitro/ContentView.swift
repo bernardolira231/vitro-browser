@@ -12,6 +12,7 @@ struct ContentView: View {
     @State private var currentURL = URL(string: "https://www.apple.com")!
     @State private var isSidebarVisible = false
     @State private var window: NSWindow?
+    @State private var tabList = TabList()
 
     var body: some View {
         ZStack(alignment: .leading) {
@@ -28,7 +29,7 @@ struct ContentView: View {
                 }
 
             if isSidebarVisible {
-                VStack {
+                VStack(spacing: 12) {
                     Color.clear
                         .frame(height: 28)
                         .contentShape(Rectangle())
@@ -39,6 +40,20 @@ struct ContentView: View {
                                 currentURL = url
                             }
                         }
+                        .padding(.bottom, 12)
+                    Divider()
+                        .padding(.bottom, 8)
+                    ForEach(tabList.tabs) { tab in
+                        HStack {
+                            Image(systemName: "globe")
+                            Text(tab.title)
+                            Spacer()
+                        }
+                        .contentShape(Rectangle())
+                        .onTapGesture {
+                            tabList.activateTab(id: tab.id)
+                        }
+                    }
                     Spacer()
                 }
                 .padding()
@@ -66,6 +81,7 @@ struct ContentView: View {
         .onChange(of: currentURL) {
             urlText = currentURL.absoluteString
         }
+        .onAppear { tabList.openTab(url: currentURL) }
     }
 
     private func setTrafficLightsHidden(_ hidden: Bool) {
