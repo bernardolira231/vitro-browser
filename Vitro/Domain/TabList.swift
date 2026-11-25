@@ -3,6 +3,7 @@ import Foundation
 struct TabList {
     var tabs: [Tab] = []
     var activeTabID: UUID?
+    var activeTab: Tab? { tabs.first(where: { tab in tab.id == activeTabID }) }
 
     mutating func openTab(url: URL) {
         let newTab = Tab(url: url, title: "Loading...")
@@ -27,5 +28,11 @@ struct TabList {
     mutating func activateTab(id: UUID) {
         guard tabs.contains(where: { $0.id == id }) else { return }
         activeTabID = id
+    }
+
+    mutating func navigateActiveTab(to url: URL) {
+        guard let tabIndex = tabs.firstIndex(where: { $0.id == activeTabID }) else { return }
+
+        tabs[tabIndex].url = url
     }
 }

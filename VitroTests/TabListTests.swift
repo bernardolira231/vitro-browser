@@ -110,4 +110,38 @@ struct TabListTests {
 
         #expect(tabList.activeTabID == tabC.id)
     }
+
+    @Test func activeTabReturnsTheActiveOne() throws {
+        var tabList = TabList()
+        let urlA = URL(string: "https://apple.com")!
+        let urlB = URL(string: "https://github.com")!
+
+        tabList.openTab(url: urlA)
+        tabList.openTab(url: urlB)
+
+        let tabA = try #require(tabList.tabs.first)
+
+        tabList.activateTab(id: tabA.id)
+
+        #expect(tabList.activeTab?.id == tabA.id)
+    }
+
+    @Test func navigatingChangesOnlyTheActiveTabURL() throws {
+        var tabList = TabList()
+        let urlA = URL(string: "https://apple.com")!
+        let urlB = URL(string: "https://github.com")!
+
+        tabList.openTab(url: urlA)
+        tabList.openTab(url: urlB)
+
+        let newURL = URL(string: "https://youtube.com")!
+
+        tabList.navigateActiveTab(to: newURL)
+
+        #expect(tabList.activeTab?.url == newURL)
+
+        let tabA = try #require(tabList.tabs.first)
+
+        #expect(tabA.url == urlA)
+    }
 }
