@@ -9,14 +9,19 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var urlText = ""
-    @State private var currentURL = URL(string: "https://www.apple.com")!
     @State private var isSidebarVisible = false
     @State private var window: NSWindow?
     @State private var tabList = TabList()
 
     var body: some View {
         ZStack(alignment: .leading) {
-            WebView(url: $currentURL)
+            if let activeTab = tabList.activeTab {
+                WebView(
+                    url: Binding(
+                        get: { activeTab.url },
+                        set: { newURL in tabList.navigateActiveTab(to: newURL) }
+                    ))
+            }
 
             Color.clear
                 .frame(width: 8)
@@ -37,7 +42,7 @@ struct ContentView: View {
                     TextField("Search or enter URL", text: $urlText)
                         .onSubmit {
                             if let url = URLResolver.resolve(urlText) {
-                                currentURL = url
+                                tabList.navigateActiveTab(to: url)
                             }
                         }
                         .padding(.bottom, 12)
@@ -78,10 +83,12 @@ struct ContentView: View {
         .onChange(of: isSidebarVisible) {
             setTrafficLightsHidden(!isSidebarVisible)
         }
-        .onChange(of: currentURL) {
-            urlText = currentURL.absoluteString
+        .onChange(of: tabList.activeTab?.url) {
+            if let activeTab = tabList.activeTab {
+                urlText = activeTab.url.absoluteString
+            }
         }
-        .onAppear { tabList.openTab(url: currentURL) }
+        .onAppear { tabList.openTab(url: URL(string: "https://youtube.com")!) }
     }
 
     private func setTrafficLightsHidden(_ hidden: Bool) {
